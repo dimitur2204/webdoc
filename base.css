@@ -1,0 +1,8 @@
+.content {
+	height: 700px;
+}
+.expand-box {
+	width: 200px;
+	height: 70px;
+	border: 1px solid black;
+}
