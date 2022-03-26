@@ -5,11 +5,22 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="stylesheet" href="base.css" />
 	</head>
 	<body>
-		<div class="expand-box"></div>
-		<div class="expand-box"></div>
-		<div class="expand-box"></div>
+		<div class="page-transition">
+			<div class="page-transition__red"></div>
+			<div class="page-transition__black"></div>
+			<div class="page-scaleup-frame">
+				<div class="page-scaleup"></div>
+			</div>
+			<div class="transition__logo">I'M LOGO</div>
+			<button id="reverse" style="z-index: 2; position: absolute; top: 50%">
+				Reverse
+			</button>
+		</div>
+		<button id="button">Button</button>
+		<button id="scaleup-btn">Scale up</button>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 		<script src="./index.js"></script>
 	</body>
