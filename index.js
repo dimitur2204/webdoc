@@ -32,14 +32,10 @@
 	// 	ease: Power4.easeInOut,
 	// })
 	// .to($logo, 0.2, { autoAlpha: 0 }, "-=1.2");
-	document.getElementById("reverse").addEventListener("click", () => {
-		tltransition.reverse();
-	});
 	const $scaleUpBtn = document.querySelector("#scaleup-btn");
 	const $pageScaleUpFrame = document.querySelector(".page-scaleup-frame");
 	const $pageScaleUp = document.querySelector(".page-scaleup");
-	const originTop = $scaleUpBtn.offsetTop + $scaleUpBtn.clientHeight / 2;
-	const originLeft = $scaleUpBtn.offsetLeft + $scaleUpBtn.clientWidth / 2;
+	const scaleUpBtnCoords = getCoords($scaleUpBtn);
 	let scaleUpTransition = new TimelineMax({ paused: true })
 		.fromTo(
 			$pageScaleUpFrame,
@@ -48,7 +44,7 @@
 			{
 				scale: 1,
 				ease: Power2.easeOut,
-				transformOrigin: `${originLeft}px ${originTop}px`,
+				transformOrigin: `${scaleUpBtnCoords.left}px ${scaleUpBtnCoords.top}px`,
 			}
 		)
 		.fromTo(
@@ -58,10 +54,14 @@
 			{
 				scale: 0.9,
 				ease: Back.easeOut.config(1.8),
-				transformOrigin: `${originLeft}px ${originTop}px`,
+				transformOrigin: `${scaleUpBtnCoords.left}px ${scaleUpBtnCoords.top}px`,
 			},
 			"-=2.2"
 		);
+	document.getElementById("reverse").addEventListener("click", () => {
+		tltransition.reverse();
+		scaleUpTransition.reverse();
+	});
 	$button.addEventListener("click", () => {
 		tltransition.play(0);
 	});
