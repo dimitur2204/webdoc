@@ -4,11 +4,14 @@
 	--main-border: #faf9f9;
 	--main-light: #faf9f9;
 	--main-green: #6a706c;
-	--dark-green: #581529;
+	--dark-green: #5d1b28;
 	--light-green: #bee3db;
 	--accent-beige: #ffd6ba;
 }
-
+html,
+body {
+	overflow-x: hidden;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -61,6 +64,31 @@ blockquote::before {
 	border: 1px solid var(--main-border);
 	background-color: var(--main-light);
 	color: var(--dark-green);
+	position: relative;
+	max-width: 230px;
+	text-align: center;
+}
+.btn-rounded {
+	background-color: var(--dark-green);
+}
+.btn-rounded .text {
+	color: var(--main-light);
+	mix-blend-mode: difference;
+}
+.btn-rounded::before {
+	transition: all 0.85s cubic-bezier(0.68, -0.2, 0.265, 1.1);
+	content: "";
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 99px;
+	width: 0;
+	background: var(--main-light);
+}
+.btn-rounded:hover::before {
+	background: var(--main-light);
+	width: 100%;
 }
 .btn,
 .btn-big {

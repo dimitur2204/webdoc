@@ -5,6 +5,33 @@
 	z-index: 2;
 	background: var(--dark-green);
 }
+.video-page__heading {
+	text-align: center;
+	margin-bottom: 0;
+}
+.video-page__sub {
+	font-weight: normal;
+	text-align: center;
+	font-family: Roboto, sans-serif;
+	margin-top: 10px;
+}
+.video-page__article {
+	display: flex;
+}
+.video-page iframe {
+	margin-bottom: 40px;
+}
+.video-page__article-heading__wrapper {
+	flex: 1.5;
+}
+.video-page__article-heading {
+	margin: 0;
+	font-size: 75px;
+}
+.video-page__article-content {
+	flex: 2;
+	font-size: 20px;
+}
 .page-transition-white {
 	position: absolute;
 	left: 0;
@@ -12,6 +39,7 @@
 	height: 100%;
 	width: 100%;
 	background: var(--dark-green);
+	z-index: 2;
 }
 .page-transition-green {
 	position: absolute;
