@@ -1,0 +1,24 @@
+.video-page {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background: var(--dark-green);
+}
+.page-transition-white {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: var(--dark-green);
+}
+.page-transition-green {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: var(--light-green);
+	clip-path: polygon(0 0, 44% 0, 64% 99%, 0% 100%);
+}

@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
+:root {
+	--main-text: #faf9f9;
+	--main-border: #faf9f9;
+	--main-light: #faf9f9;
+	--main-green: #6a706c;
+	--dark-green: #581529;
+	--light-green: #bee3db;
+	--accent-beige: #ffd6ba;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: Roboto, sans-serif;
+	color: var(--main-text);
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: Roboto Slab;
+}
+h1 {
+	font-size: 38px;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+p {
+	line-height: 1.6;
+}
+blockquote {
+	margin: 0;
+	padding: 0;
+	font-style: italic;
+	font-size: 20px;
+	line-height: 1.7;
+}
+blockquote::after {
+	content: "„";
+	font-size: 22px;
+	font-weight: bold;
+}
+
+blockquote::before {
+	content: "“";
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.btn {
+	height: 27px;
+	padding: 15px 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 99px;
+	border: 1px solid var(--main-border);
+	background-color: var(--main-light);
+	color: var(--dark-green);
+}
+.btn,
+.btn-big {
+	padding: 25px 25px;
+	min-width: 200px;
+	font-size: 20px;
+}
+.btn-ghost {
+	background-color: transparent;
+	color: var(--main-text);
+}
+.container {
+	padding: 0 80px;
+}
