@@ -1,0 +1,34 @@
+.passion-page{
+    background: url('./images/pattern.svg');
+    background-repeat: repeat;
+}
+.passion-page__box{
+    clip-path: polygon(0 8%, 7% 0, 100% 0, 100% 90%, 5% 90%, 0 100%);
+    background-color: #485161;
+    height: 400px;
+    align-self: flex-end;
+}
+.passion-page__image-text{
+    display: flex;
+}
+.passion-page__image-text img{
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 790px;
+}
+.passion-page__heading-box{
+    position: relative;
+}
+.lines{
+    display: flex;
+    height: 90px;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 2px solid var(--main-light);
+    border-bottom: 2px solid var(--main-light);
+}
+
+.lines h1{
+    margin: 0;
+}

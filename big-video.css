@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("IMAGES/background.png");
+}
+
+.videobox{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.rectangle{
+    height: 451px;
+    transform: skew(-20deg);
+    border-style: solid;
+    border-color: white;
+}
+
+.image{
+    transform: skew(20deg);
+    display: flex;
+    margin-top: 30px;
+}
+
+.arrow1 img, .arrow2 img{
+    height: 60px;
+  
+}
+
+.arrow1, .arrow2{
+    margin-top: 470px;
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.extra{
+    padding-top:300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.image2 img{
+    height: 451px;
+}
+
+.text{
+    border-style:solid;
+    border-color: white;
+    clip-path: polygon(25% 0%, 100% 0, 100% 80%, 30% 80%, 0 100%, 0 25%);
+}
+    
+@keyframes animation {
+    0%   {transform: translateY(0%);}
+    50%  {transform: translateY(100%);}
+    100% {transform: translateY(0%);}
+}
+
+div{
+  display: inline-block;
+  border: 1px solid black;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
