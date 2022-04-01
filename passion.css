@@ -32,3 +32,17 @@
 .lines h1{
     margin: 0;
 }
+
+.passion-page__image-text.rotated{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.passion-page__image-text.rotated > .passion-page__box{
+    clip-path: polygon(0 0, 92% 0, 100% 10%, 100% 100%, 95% 85%, 0 85%);
+}
+
+.arrow.rotated{
+    transform: scale(-1,1);
+}
