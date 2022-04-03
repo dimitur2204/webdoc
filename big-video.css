@@ -4,18 +4,22 @@
 }
 
 body{
-    background-image: url("IMAGES/background.png");
+    background: url('./images/dot-pattern.svg'), linear-gradient(45deg, rgba(27,54,75,1) 0%, rgba(12,20,28,1) 100%);
+    background-repeat: repeat;
 }
-
+h1{
+text-align: center;
+margin-top:50px;
+margin-bottom:70px;
+}
 .videobox{
-    margin-top: 60px;
     display: flex;
     justify-content: space-around;
     align-content: center;
 }
 
 .rectangle{
-    height: 451px;
+    height: 673px;
     transform: skew(-20deg);
     border-style: solid;
     border-color: white;
@@ -33,14 +37,14 @@ body{
 }
 
 .arrow1, .arrow2{
-    margin-top: 470px;
+    margin-top: 700px;
     animation-name: animation;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
 .extra{
-    padding-top:300px;
+    padding-top:180px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -59,14 +63,14 @@ body{
     
 @keyframes animation {
     0%   {transform: translateY(0%);}
-    50%  {transform: translateY(100%);}
+    50%  {transform: translateY(20%);}
     100% {transform: translateY(0%);}
 }
 
-div{
+/* div{
   display: inline-block;
   border: 1px solid black;
   animation-name: example;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-}
+} */

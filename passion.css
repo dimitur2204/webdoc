@@ -1,12 +1,12 @@
 body,html{
     margin: 0;
     padding: 0;
+    background: url('./images/dot-pattern.svg'), linear-gradient(45deg, rgba(27,54,75,1) 0%, rgba(12,20,28,1) 100%);
 }
 .passion-page{
-    background: url('./images/dot-pattern.svg'), linear-gradient(45deg, rgba(27,54,75,1) 0%, rgba(12,20,28,1) 100%);;
+    background: url('./images/dot-pattern.svg'), linear-gradient(45deg, rgba(27,54,75,1) 0%, rgba(12,20,28,1) 100%);
     background-repeat: repeat;
     padding:30px 250px;
-
 }
 .passion-page > h1{
     margin-top: 0;
@@ -65,3 +65,16 @@ body,html{
 .arrow{
     transform: scale(0.6);
 }
+
+/* .animated-line {
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 0;
+    animation: dash 5s linear forwards;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+        stroke-dasharray: 100;
+    }
+  } */

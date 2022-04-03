@@ -97,7 +97,7 @@
 			.set($frameRed, { scaleX: 0 });
 
 		$button.addEventListener("click", (e) => {
-			e.preventDefault();
+			// e.preventDefault();
 			tltransition.play();
 		});
 		$closeVideoBtn.addEventListener("click", (e) => {

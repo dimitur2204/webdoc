@@ -8,10 +8,6 @@
 	--light-green: #bee3db;
 	--accent-beige: #ffd6ba;
 }
-html,
-body {
-	overflow-x: hidden;
-}
 body {
 	margin: 0;
 	padding: 0;
@@ -60,13 +56,13 @@ blockquote::before {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 99px;
-	border: 1px solid var(--main-border);
+	border: 2px solid var(--main-border);
 	background-color: var(--main-light);
 	color: var(--dark-green);
 	position: relative;
 	max-width: 230px;
 	text-align: center;
+	border-radius: 3px;
 }
 .btn-rounded {
 	background-color: var(--dark-green);
