@@ -24,11 +24,11 @@ body,html{
     height: 200%;
     position: absolute;
     top: -20px;
-    left: 19%;
+    left: 37%;
     border: 5px solid white;
     background: transparent;
     z-index: 1;
-    transform: skew(20deg);
+    transform: skew(29deg);
 }
 .long-page__image-text {
     position: relative;
@@ -53,15 +53,17 @@ body,html{
 
 .lines{
     display: flex;
-    height: 90px;
+    height: 135px;
     padding: 20px;
     margin: 20px 0;
-    border-left: 2px solid var(--main-light);
-    border-bottom: 2px solid var(--main-light);
 }
 
 .lines h1{
     margin: 0;
+    border-left: 2px solid var(--main-light);
+    border-bottom: 2px solid var(--main-light);
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 .long-page__image-text.rotated > .passion-page__box{
@@ -77,13 +79,15 @@ body,html{
 }
 .heading{
     display: flex;
-    flex-direction: column;
     width: 54%;
 }
 .heading .lines{
     background-color: #485161;
     margin: 0;
     width: 100%;
+    align-self: flex-end;
+    position: relative;
+    z-index: 2;
 }
 .long-page__video-heading{
     z-index: 2;
@@ -93,4 +97,14 @@ body,html{
 }
 .long-page__video-heading iframe{
     align-self: flex-end;
+}
+.connector{
+    width: 200px;
+    height: 225px;
+    background-color: #485161;
+    transform: skew(-20deg);
+    align-self: flex-end;
+    position: relative;
+    z-index: 1;
+    left: -40px;
 }
