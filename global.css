@@ -108,3 +108,8 @@ blockquote::before {
 .container {
 	padding: 0 80px;
 }
+
+.btn-wrapper{
+	display: flex;
+	justify-content: space-between;
+}

@@ -32,6 +32,7 @@
 }
 .btn-wrapper {
 	display: flex;
+	justify-content: start;
 	height: 220px;
 }
 .btn-wrapper .btn:nth-child(1) {
