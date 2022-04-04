@@ -12,6 +12,9 @@ text-align: center;
 margin-top:50px;
 margin-bottom:70px;
 }
+.big-video-page{
+    padding: 30px 250px;
+}
 .videobox{
     display: flex;
     justify-content: space-around;
@@ -58,7 +61,7 @@ margin-bottom:70px;
 .big-video-page__box{
     clip-path: polygon(0 8%, 7% 0, 100% 0, 100% 90%, 5% 90%, 0 100%);
     background-color: #485161;
-    height: 400px;
+    height: 500px;
     align-self: flex-end;
 }
 .big-video-page__image-text{
@@ -83,8 +86,8 @@ margin-bottom:70px;
     height: 90px;
     padding: 20px;
     margin: 20px 0;
-    border-left: 2px solid var(--main-light);
-    border-bottom: 2px solid var(--main-light);
+    border-left: 4px solid var(--main-light);
+    border-bottom: 4px solid var(--main-light);
 }
 
 .lines h1{

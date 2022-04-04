@@ -8,15 +8,10 @@ body,html{
     background-repeat: repeat;
     padding:30px 250px;
 }
-.passion-page > h1{
-    margin-top: 0;
-    text-align: center;
-    font-size: 63px;
-}
 .passion-page__box{
     clip-path: polygon(0 8%, 7% 0, 100% 0, 100% 90%, 5% 90%, 0 100%);
     background-color: #485161;
-    height: 400px;
+    height: 500px;
     align-self: flex-end;
 }
 .passion-page__image-text{
@@ -40,8 +35,8 @@ body,html{
     height: 90px;
     padding: 20px;
     margin: 20px 0;
-    border-left: 2px solid var(--main-light);
-    border-bottom: 2px solid var(--main-light);
+    border-left: 4px solid var(--main-light);
+    border-bottom: 4px solid var(--main-light);
 }
 
 .lines h1{
@@ -60,10 +55,12 @@ body,html{
 
 .arrow.rotated{
     transform: scale(-0.6,0.6);
+    visibility: hidden;
 }
 
 .arrow{
     transform: scale(0.6);
+    visibility: hidden;
 }
 
 /* .animated-line {

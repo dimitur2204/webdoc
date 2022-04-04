@@ -8,8 +8,12 @@
 	const $thirdSection = document.querySelectorAll(
 		".passion-page__image-text"
 	)[2];
+	const $fourthSection = document.querySelectorAll(
+		".passion-page__image-text"
+	)[3];
 	const $firstArrow = document.querySelectorAll(".arrow")[0];
 	const $secondArrow = document.querySelectorAll(".arrow")[1];
+	const $thirdArrow = document.querySelectorAll(".arrow")[2];
 	const firstSectionAnim = anime({
 		targets: $firstSection,
 		translateY: [-50, 0],
@@ -63,6 +67,29 @@
 		duration: 1500,
 		autoplay: false,
 	});
+	const thirdArrowAnim = () => {
+		const arrowTimeLine = anime.timeline({
+			duration: 1,
+		});
+		$thirdArrow.querySelectorAll("path,line,polyline").forEach((el) => {
+			arrowTimeLine.add({
+				targets: el,
+				strokeDashoffset: [anime.setDashoffset, 0],
+				duration: 300,
+				easing: "easeOutSine",
+				autoplay: false,
+			});
+		});
+		arrowTimeLine.play();
+	};
+	const fourthSectionAnim = anime({
+		targets: $fourthSection,
+		opacity: [0, 1],
+		translateY: [50, 0],
+		easing: "easeOutSine",
+		duration: 1500,
+		autoplay: false,
+	});
 	const options = {
 		rootMargin: "20px",
 		threshold: 0.6,
@@ -76,6 +103,7 @@
 	firstSectionObserver.observe($firstSection);
 	const firstArrowObserver = new IntersectionObserver(([entry]) => {
 		if (entry && entry.isIntersecting) {
+			entry.target.style.visibility = "visible";
 			firstArrowAnim();
 			firstArrowObserver.unobserve($firstArrow);
 		}
@@ -90,6 +118,7 @@
 	secondSectionObserver.observe($secondSection);
 	const secondArrowObserver = new IntersectionObserver(([entry]) => {
 		if (entry && entry.isIntersecting) {
+			entry.target.style.visibility = "visible";
 			secondArrowAnim();
 			secondArrowObserver.unobserve($secondArrow);
 		}
@@ -102,4 +131,19 @@
 		}
 	}, options);
 	thirdSectionObserver.observe($thirdSection);
+	const thirdArrowObserver = new IntersectionObserver(([entry]) => {
+		if (entry && entry.isIntersecting) {
+			entry.target.style.visibility = "visible";
+			thirdArrowAnim();
+			thirdArrowObserver.unobserve($thirdArrow);
+		}
+	}, options);
+	thirdArrowObserver.observe($thirdArrow);
+	const fourthSectionObserver = new IntersectionObserver(([entry]) => {
+		if (entry && entry.isIntersecting) {
+			fourthSectionAnim.play();
+			fourthSectionObserver.unobserve($fourthSection);
+		}
+	}, options);
+	fourthSectionObserver.observe($fourthSection);
 })();

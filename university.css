@@ -8,15 +8,10 @@ body,html{
     background-repeat: repeat;
     padding:30px 250px;
 }
-.long-page > h1{
-    margin-top: 0;
-    text-align: center;
-    font-size: 63px;
-}
 .long-page__box{
     clip-path: polygon(0 8%, 7% 0, 100% 0, 100% 90%, 5% 90%, 0 100%);
     background-color: #485161;
-    height: 400px;
+    height: 500px;
     align-self: flex-end;
 }
 .parallelogram{
@@ -60,8 +55,8 @@ body,html{
 
 .lines h1{
     margin: 0;
-    border-left: 2px solid var(--main-light);
-    border-bottom: 2px solid var(--main-light);
+    border-left: 4px solid var(--main-light);
+    border-bottom: 4px solid var(--main-light);
     padding-left: 20px;
     padding-bottom: 20px;
 }
