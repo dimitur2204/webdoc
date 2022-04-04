@@ -40,7 +40,7 @@ margin-bottom:70px;
 }
 
 .arrow1, .arrow2{
-    margin-top: 700px;
+    margin: auto 97px;
     animation-name: animation;
     animation-duration: 2s;
     animation-iteration-count: infinite;
