@@ -23,7 +23,7 @@ html,body{
     border-left: 4px solid var(--main-light);
     border-bottom: 4px solid var(--main-light);
     padding-left: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 .names h1 {
 	font-size: 67px;
