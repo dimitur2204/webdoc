@@ -79,7 +79,7 @@ body,html{
 .heading .lines{
     background-color: #485161;
     margin: 0;
-    width: 100%;
+    width: 120%;
     align-self: flex-end;
     position: relative;
     z-index: 2;
@@ -92,14 +92,16 @@ body,html{
 }
 .long-page__video-heading iframe{
     align-self: flex-end;
+    width: 73%;
+    height: 500px;
 }
 .connector{
-    width: 200px;
+    width: 534px;
     height: 225px;
     background-color: #485161;
     transform: skew(-20deg);
     align-self: flex-end;
     position: relative;
-    z-index: 1;
-    left: -40px;
+    z-index: 0;
+    left: -122px;
 }

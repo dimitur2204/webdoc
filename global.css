@@ -97,8 +97,8 @@ blockquote::before {
 }
 .btn,
 .btn-big {
-	padding: 25px 25px;
-	min-width: 200px;
+	padding: 25px 22px;
+	min-width: 190px;
 	font-size: 20px;
 }
 .btn-ghost {
@@ -112,4 +112,16 @@ blockquote::before {
 .btn-wrapper{
 	display: flex;
 	justify-content: space-between;
+	margin-top: 80px;
+	margin-bottom: 50px;
+}
+
+iframe{
+	border: 2px solid var(--main-light);
+}
+
+img{
+	-webkit-box-shadow: 9px 3px 15px 1px rgba(0,0,0,0.54); 
+box-shadow: 9px 3px 15px 1px rgba(0,0,0,0.54);
+z-index: 1;
 }
