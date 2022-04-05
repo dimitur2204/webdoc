@@ -92,7 +92,7 @@ body,html{
 }
 .long-page__video-heading iframe{
     align-self: flex-end;
-    width: 73%;
+    width: 80%;
     height: 500px;
 }
 .connector{
