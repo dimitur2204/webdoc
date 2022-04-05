@@ -1,4 +1,4 @@
-(function arrowsIIFE() {
+(function passionIIFE() {
 	const $firstSection = document.querySelectorAll(
 		".passion-page__image-text"
 	)[0];
