@@ -8,6 +8,16 @@
 	--light-green: #bee3db;
 	--accent-beige: #ffd6ba;
 }
+.back-arrow{
+	position: absolute;
+	top: 40px;
+	left: 50px;
+}
+.back-arrow img{
+	box-shadow: none;
+	width: 40px;
+	height: 40px;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -107,6 +117,7 @@ blockquote::before {
 }
 .container {
 	padding: 0 80px;
+	position: relative;
 }
 
 .btn-wrapper{
